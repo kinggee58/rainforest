@@ -1,13 +1,11 @@
 <h1>Products</h1>
 
-<body>
 	
 <% @products.each do |product| %>
 
-<p><%= @product.name %></p>
+<p><%= product.name %></p>
+<p><%= product.description %></p>
+<p> <%= product.formatted_price %></p>
 
-<p><%= @product.description %></p>
+<% end %>
 
-<p> <%= @product.formatted_price %></p>
-
-</body>
